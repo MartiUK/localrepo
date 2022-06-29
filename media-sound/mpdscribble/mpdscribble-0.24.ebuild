@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit meson ninja-utils systemd
+inherit meson
 
 DESCRIPTION="An MPD client that submits information to Audioscrobbler"
 HOMEPAGE="https://www.musicpd.org/clients/mpdscribble/"
@@ -21,6 +21,10 @@ DEPEND="${RDEPEND}"
 
 src_configure() {
 	meson_src_configure
+}
+
+src_compile() {
+	meson_src_compile
 }
 
 src_install() {
