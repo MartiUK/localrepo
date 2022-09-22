@@ -97,7 +97,7 @@ doexe ${MY_PN} ${MY_PN^^[p]}-BrowserSupport ${MY_PN^^[p]}-KeyringHelper chrome-s
 insinto ${DESTDIR}
 doins chrome_100_percent.pak chrome_200_percent.pak icudtl.dat resources.pak snapshot_blob.bin v8_context_snapshot.bin vk_swiftshader_icd.json
 insopts -m0755
-doins -r locales resources swiftshader
+doins -r locales resources
 
 # chrome-sandbox requires the setuid bit to be specifically set.
 # See https://github.com/electron/electron/issues/17972
