@@ -2,8 +2,11 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>james@thegreatmcpain.xyz</email>
+		<email>me@martinke.mp</email>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">flightlessmango/MangoHud</remote-id>
+	</upstream>
 	<use>
 		<flag name="tools">"Installs the 'mangoapp' and 'mangohudctl' binaries."</flag>
 		<flag name="xnvctrl">"Use XNVctrl as fall back for older Nvidia devices."</flag>
